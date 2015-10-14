@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqI-X8-l1w">
+                                <rect key="frame" x="266" y="635" width="250" height="250"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="vPZ-as-R7n"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Rock"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="125"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectedRPS:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="nGg-MN-UGq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGv-zH-07d">
+                                <rect key="frame" x="835" y="635" width="250" height="250"/>
+                                <animations/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Paper"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="125"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectedRPS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcs-IO-NYW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5F-I2-xBk">
+                                <rect key="frame" x="1415" y="635" width="250" height="250"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="gke-nu-lX7"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Scissors"/>
+                                <connections>
+                                    <action selector="selectedRPS:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="mbo-2R-bKA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhe-UE-2KB">
+                                <rect key="frame" x="922" y="88" width="77" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVR-z4-Ard">
+                                <rect key="frame" x="946" y="562" width="29" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7c-8f-IUn">
+                                <rect key="frame" x="835" y="144" width="250" height="250"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BZp-Dw-IA8"/>
+                                    <constraint firstAttribute="width" constant="250" id="nEd-rg-Lxx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YqI-X8-l1w" secondAttribute="bottom" constant="195" id="1O5-Rt-Udt"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="baseline" secondItem="K5F-I2-xBk" secondAttribute="firstBaseline" id="AQr-Tu-S7U"/>
+                            <constraint firstItem="J7c-8f-IUn" firstAttribute="top" secondItem="Nhe-UE-2KB" secondAttribute="bottom" constant="35" id="BgP-Dp-en4"/>
+                            <constraint firstItem="J7c-8f-IUn" firstAttribute="trailing" secondItem="SGv-zH-07d" secondAttribute="trailing" id="EJk-dn-dQZ"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="baseline" secondItem="YqI-X8-l1w" secondAttribute="firstBaseline" id="Eq7-XR-bAu"/>
+                            <constraint firstItem="Nhe-UE-2KB" firstAttribute="centerX" secondItem="qVR-z4-Ard" secondAttribute="centerX" id="Ohh-bT-Mq6"/>
+                            <constraint firstItem="YqI-X8-l1w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="635" id="SEG-cQ-trn"/>
+                            <constraint firstItem="YqI-X8-l1w" firstAttribute="baseline" secondItem="SGv-zH-07d" secondAttribute="firstBaseline" id="VMf-Tm-ueY"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="baseline" secondItem="K5F-I2-xBk" secondAttribute="baseline" id="awd-Nw-OGx"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHp-Qb-Gnc"/>
+                            <constraint firstItem="Nhe-UE-2KB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="e12-D0-SsO"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="centerX" secondItem="qVR-z4-Ard" secondAttribute="centerX" id="j3f-gv-g8I"/>
+                            <constraint firstItem="YqI-X8-l1w" firstAttribute="top" secondItem="SGv-zH-07d" secondAttribute="top" id="kHt-uh-8dr"/>
+                            <constraint firstItem="SGv-zH-07d" firstAttribute="top" secondItem="qVR-z4-Ard" secondAttribute="bottom" constant="52" id="m9u-Gf-aB0"/>
+                            <constraint firstItem="YqI-X8-l1w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="266" id="qIV-6b-DSy"/>
+                            <constraint firstItem="K5F-I2-xBk" firstAttribute="top" secondItem="SGv-zH-07d" secondAttribute="top" id="tck-9b-afC"/>
+                            <constraint firstItem="J7c-8f-IUn" firstAttribute="leading" secondItem="SGv-zH-07d" secondAttribute="leading" id="y5e-wc-ZK0"/>
+                            <constraint firstAttribute="trailing" secondItem="K5F-I2-xBk" secondAttribute="trailing" constant="255" id="zWJ-nx-qQc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="computerPlay" destination="J7c-8f-IUn" id="RHR-le-8y9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="365"/>
+        </scene>
+    </scenes>
+</document>
